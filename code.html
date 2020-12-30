@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kaas</title>
+</head>
+<body>
+<script language="JavaScript" type="text/javascript">
+
+//stap1
+var kaas = prompt("Is de kaas geel?").toLowerCase();
+
+
+//stap2
+if (kaas === "ja"){
+	kaas = prompt("Zitten er gaten in?").toLowerCase();
+	if (kaas === "ja"){
+		kaas = prompt("Is de kaas belachelijk duur?").toLowerCase();
+		if (kaas === "ja"){
+			alert("emmenthaler");
+			document.write("emmenthaler")
+		} else if (kaas === "nee") {
+			alert("leerdammer");
+			document.write("leerdammer")			
+		}
+
+	} else if (kaas=== "nee"){
+		kaas = prompt("Is de kaas hard als steen?").toLowerCase();
+		if (kaas === "ja"){
+			alert("parmigiano reggio");
+			document.write("parmigiano reggio")
+		} else if (kaas=== "nee"){
+			alert("goudsekaas");
+			document.write("goudsekaas")
+		}				
+	}
+} else if (kaas === "nee"){
+	kaas = prompt("Heeft de kaas blauwe schimmels?").toLowerCase();
+
+		if (kaas === "ja"){
+		kaas = prompt("Heeft de kaas een korst?").toLowerCase();
+		if (kaas === "ja"){
+			alert("bleu de rochbaron");
+			document.write("bleu de rochbaron")
+		} else if (kaas === "nee") {
+			alert("Foume d'ambert");
+			document.write("Foume d'ambert")			
+		}
+
+	} else if (kaas=== "nee"){
+		kaas = prompt("Heeft de kaas een korst 2?").toLowerCase();
+		if (kaas === "ja"){
+			alert("camembert");
+			document.write("camembert")
+		} else if (kaas=== "nee"){
+			alert("mozarella");
+			document.write("mozarella")
+		}				
+	}
+}
+
+
+</script>
+</body>
+</html>
